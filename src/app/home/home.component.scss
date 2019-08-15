@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.img1 {
+    width: 100%;
+    box-shadow: 0 4px 8px blur rgba(0, 0, 0, 0.2), 0 6px 20px blur rgba(0, 0, 0, 0.19);
+
+}
+
+.grayBox{
+	color: #0b3c5d;
+    text-align: center;
+    padding: 80px 0px;
+    background-color: #eee;
+    background-image: url('../../assets/notebook2.png');
+
+	.rightColData{
+			padding:8px;
+			font-size:30px;
+			line-height:1.8;
+			font-family: 'Roboto Slab', serif;	
+
+			p:first-child{
+			max-width:95%;
+			font-style:italic;
+			font-family: 'Pacifico', cursive;
+			}	
+		}
+
+		.rightColSub{
+			font-size:20px;
+			color:orange;
+			font-weight:bold
+		}
+}
+
+.blockquote {
+	position: relative;
+}
+
+.blockquote:before {
+	display: block;
+	padding-left: 10px;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -65px;
+	top: -20px;
+	color: #cd5360;
+}
+
+@media (min-width: 1024px){
+	.rmrightPadding{
+		padding-right:0px
+	}
+
+	.rmleftPadding{
+		padding-left:0px;
+	}
+
+	.grayBox{
+		.rightCol{
+			padding: 6%;
+		    text-align: left;
+		}
+		
+	}
+
+}
+
+@media (max-width: 768px){
+	.grayBox{
+	margin: 0 10px;
+	padding: 15px 0px;
+	}
+}
+
+.btnGroup{
+	display: inline-block;
+	margin-top: 15px;	
+.btn{
+	margin: 8px;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btnRound{
+	border-radius: 20px;
+}
+.btnGreen{
+	background-color: #cd5360;
+    border: 2px solid #cd5360;
+    color: white;
+}
+
+.btnGreen:hover{
+	background-color: white;
+    border: 3px solid white;
+    color: #0b3c5d;
+}
+
+.btnDefault{
+	background-color: #328cc1;
+	border: 2px solid #328cc1;
+    color: #fff;
+}
+
+.btnDefault:hover{
+	background-color: #fff;
+	border: 3px solid #328cc1;
+    color: #328cc1;
+}
+
+}
+
+.subtitle{
+	text-align:center;
+	color: #0b3c5d;
+	font-size: 40px;
+	font-family: 'Acme', sans-serif;
+	margin-bottom: 20px;
+}
+
+.section2 {
+
+	.subText{
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 20px;
+	color: #cd5360;
+	}
+
+	.linkText{
+	font-size: 15px;
+	font-weight: 700;
+	text-decoration:none;
+	padding-top:15px;
+	}
+}
+
+.section1{
+	background:url('../../assets/bg1.jpg') no-repeat top fixed;
+	position: relative;
+    background-size: 100%;
+    height: 80vh;
+
+    .layer {
+	    position: absolute;
+	    background-color: #1d273166;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
+    .subtitle{
+    	color:white;
+    }
+
+	.data {
+		text-align:justify;
+		color: #fff;
+		background-color: #328cc1cc;
+		font-size:20px;
+		max-width: 40%;
+		padding:2%;
+		margin: 6% 0;
+	}
+}
+
+.section3{
+	background-color: #0b3c5d;
+	background-image: url('../../assets/prism.png');
+	.subtitle{
+		color:#fff;
+	}
+
+	.grid{
+		margin: 50px 0px 100px 0px;
+	}
+
+	.grid_img{
+		min-height: 205px;
+	}
+
+	.grid_box{
+		background-color: #fff;
+		min-height: 250px;
+		margin: 30px 0px;
+
+		.book_category{
+			color: #000;
+		    padding: 13px;
+		    text-align: center;
+		    font-size: 20px;
+		    font-weight: 700;
+		    background-color: yellow;
+		}
+	}
+
+
+	}

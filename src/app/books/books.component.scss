@@ -1,0 +1,38 @@
+.section1 {
+	background-color: #fff;
+	padding: 12px 0px;
+
+	.link {
+		color: #cd5360;
+	    text-align: center;
+	    font-size: 1.5em;
+	    display: block;
+	    font-weight: 700;
+	    text-decoration: none;
+	}
+
+	.linkhover{
+		color: #1d2731;
+	}
+
+	.arrow {
+	    position: absolute;
+	    border: 15px solid #fff;
+	    /* top: 30px; */
+	    left: 45%;
+	    transform: rotate(135deg);
+	    border-left: none;
+	    padding: 5px;
+	    border-bottom: none;
+	    margin-top: 0px;
+    }
+
+    .badge{
+    	margin: 5px;
+    	padding: 6px 10px;
+    	border-radius: 15px;
+    	background-color: yellow;
+    	font-size: 15px;
+    	color: #1d2731;
+    }
+}

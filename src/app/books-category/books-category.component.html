@@ -1,0 +1,44 @@
+<section class="section1 booksCategory">
+	<div class="container">
+		<!-- <div class="search">
+			<form>
+				<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<div class="input-group">
+							<input id="search" type="text" class="form-control" name="search" placeholder="Search">
+							<span class="input-group-addon">
+								<a class="search-link"><i class="glyphicon glyphicon-search"></i></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div> -->
+		<div class="img-grid">
+			<div class="row">
+				<div class="col-sm-4" *ngFor="let img of currentImgArray">
+					<div class="grid-col">
+						<img class="img-responsive imgClass" src={{img.src}}/>
+						<div class="caption">{{img.title}}</div>
+						<div class="middle">
+					    	<div class="text">Buy Now</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagination">
+			<div class="row">
+				<div class="pagination-right">
+				<button class="btn btn-xs page-num" (click)="previousPage()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+				<button class="btn btn-xs page-num" id="btn1" (click)="pageClick(btn1)">{{btn1}}</button>
+				<button class="btn btn-xs page-num" id="btn2" (click)="pageClick(btn2)">{{btn2}}</button>
+				<button class="btn btn-xs page-num" (click)="nextPage()"><i class="glyphicon glyphicon-chevron-right"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

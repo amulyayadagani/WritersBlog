@@ -1,0 +1,22 @@
+<section class="section1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<a [routerLink]="['',{ outlets:{category: ['books','telugu']}}]" class="link" [ngClass]="rla.isActive? 'linkhover' : 'link'" routerLinkActive #rla="routerLinkActive">Telugu<span title="Book Count" class="badge">225</span></a>
+				<div *ngIf="rla.isActive" class="arrow"></div>
+			</div>
+			<div class="col-sm-3">
+				<a [routerLink]="['',{ outlets:{category: ['books','kannada']}}]" class="link" [ngClass]="rla1.isActive? 'linkhover' : 'link'" routerLinkActive #rla1="routerLinkActive">Kannada<span class="badge">25</span></a>
+				<div *ngIf="rla1.isActive" class="arrow"></div>
+			</div>
+			<div class="col-sm-3">
+				<a [routerLink]="['',{ outlets:{category: ['books','english']}}]" routerLinkActive #rla2="routerLinkActive" class="link" [ngClass]="rla2.isActive? 'linkhover' : 'link'">English<span class="badge">2</span></a>
+				<div *ngIf="rla2.isActive" class="arrow"></div>
+			</div>
+			<div class="col-sm-3">
+				<a [routerLink]="['',{ outlets:{category: ['books','tamil']}}]" routerLinkActive #rla3="routerLinkActive" class="link" [ngClass]="rla3.isActive? 'linkhover' : 'link'">Tamil<span class="badge">1</span></a>
+				<div *ngIf="rla3.isActive" class="arrow"></div>
+			</div>
+		</div>
+</div>
+</section>
