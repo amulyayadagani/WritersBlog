@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router }    from '@angular/router'; 
+import { Router, RouterLinkActive }    from '@angular/router'; 
+import $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ export class AppComponent {
 
   constructor(private router: Router) { }
 
-  changeMenu(route){
+  changeMenu(route,event){
   	this.router.navigateByUrl('/'+route);
-  }
+  	//$(event.target).addClass("active");
+	}
 }

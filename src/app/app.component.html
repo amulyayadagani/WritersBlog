@@ -12,11 +12,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right menu-item">
-        <li routerLinkActive="active"><a [title]="Home" routerLinkActive="active" (click)="changeMenu('home')">Home</a></li>
-        <li routerLinkActive="active"><a [title]="Books" routerLinkActive="active" (click)="changeMenu('books(category:books/telugu')">Books</a></li>
-        <li routerLinkActive="active"><a [title]="Movies" routerLinkActive="active" (click)="changeMenu('movies')">Movies</a></li>
-        <li routerLinkActive="active"><a [title]="About" routerLinkActive="active" (click)="changeMenu('about')">About</a></li>
-        <li routerLinkActive="active"><a [title]="Contact" routerLinkActive="active" (click)="changeMenu('contact')">Contact</a></li>
+        <li><a title="Home" (click)="changeMenu('home',$event)">Home</a></li>
+        <li><a title="Books" (click)="changeMenu('books(category:books/telugu',$event)">Books</a></li>
+        <li><a title="Movies" (click)="changeMenu('movies',$event)">Movies</a></li>
+        <li><a title="About" (click)="changeMenu('about',$event)">About</a></li>
+        <li><a title="Contact" (click)="changeMenu('contact',$event)">Contact</a></li>
       </ul>
     </div>
   </div>

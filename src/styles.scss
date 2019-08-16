@@ -37,20 +37,18 @@ nav.navbar.navbar-default{
 			a {
 				color: white;
 				font-size: 1.3em;
+				cursor: pointer;
 			}
 			
 			a.active {
 				color: yellow;
 				background-color: #328cc1;
+				font-weight:bold;
 			}
 
 			a:hover,a:focus {
 				background-color: #337ab7;
 			}
-		}
-
-		li.active {
-			color: yellow;
 		}
 	}
 

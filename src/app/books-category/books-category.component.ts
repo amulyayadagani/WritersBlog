@@ -27,7 +27,6 @@ export class BooksCategoryComponent implements OnInit {
         if(val instanceof NavigationEnd){
         	if(val.urlAfterRedirects.includes("books")){
         		let arr = val.urlAfterRedirects.split("/");
-	        	console.log(arr)
 	        	this.selectedCategory = arr[2].substring(0,arr[2].length-1);
 	        	this.imgArray = [];
 	        	this.currentImgArray = [];
@@ -38,9 +37,7 @@ export class BooksCategoryComponent implements OnInit {
    }
 
   ngOnInit() {
-
-  this.pageClick(1);
-
+    this.pageClick(1);
   }
 
   getImages(selectedCategory){
@@ -49,7 +46,6 @@ export class BooksCategoryComponent implements OnInit {
   	let j = 0;
   	let arr = [];
   	tempArray = this.bookservice.getData(selectedCategory);
-  	console.log(tempArray);
   	tempArray.forEach((v,index) => {
   		if(i < 6){
   			arr.push(v);
@@ -64,7 +60,6 @@ export class BooksCategoryComponent implements OnInit {
   	this.imgArray.push({"page":++j,"data":arr});
   	this.pageClick(this.currentPage);
   	this.pageCount = this.imgArray.length;
-  	console.log(this.imgArray);
   }
 
   pageClick(id){

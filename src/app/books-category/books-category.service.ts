@@ -13,12 +13,21 @@ const config = [
 			  {"id": 9, "category": "telugu", "title": "Vasheekara_Yagnam", "src":"assets/telugu/Vasheekara_Yagnam.jpg"}] 
 	  },
 	  { "category": "kannada", 
-	  	"data": [{"id": 10, "category": "kannada", "title": "Vasheekara_Yagnam", "src":"assets/kannada/Vasheekara_Yagnam.jpg"},
+	  	"data": [{"id": 10, "category": "kannada", "title": "Antharyudhadha", "src":"assets/kannada/Antharyudhadha.jpg"},
 			  {"id": 11, "category": "kannada", "title": "Aathmagamana", "src":"assets/kannada/Aathmagamana.jpg"},
 			  {"id": 12, "category": "kannada", "title": "Agnatha_Sundhari", "src":"assets/kannada/Agnatha_Sundhari.jpg"},
 			  {"id": 13, "category": "kannada", "title": "Cross_Roads", "src":"assets/kannada/Cross_Roads.jpg"},
 			  {"id": 14, "category": "kannada", "title": "Devaru_Vs_Manava", "src":"assets/kannada/Devaru_Vs_Manava.jpg"},
 			  {"id": 15, "category": "kannada", "title": "Sankalpa", "src":"assets/kannada/Sankalpa.jpg"}]
+	  },
+	  { "category": "english", 
+	  	"data": [{"id": 16, "category": "english", "title": "The Dictator Of Dark", "src":"assets/english/The_Dictator_Of_The_Dark.jpg"},
+			  {"id": 17, "category": "english", "title": "The Enemy Of Mankind", "src":"assets/english/The_Enemy_Of_Mankind.jpg"}]
+	  },
+	  { "category": "tamil", 
+	  	"data": [{"id": 18, "category": "tamil", "title": "", "src":"assets/tamil/1.jpg"},
+			  {"id": 19, "category": "tamil", "title": "", "src":"assets/tamil/2.jpg"},
+			  {"id": 20, "category": "tamil", "title": "", "src":"assets/tamil/3.jpg"}]
 	  }
   ];
 

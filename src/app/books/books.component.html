@@ -2,11 +2,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
-				<a [routerLink]="['',{ outlets:{category: ['books','telugu']}}]" class="link" [ngClass]="rla.isActive? 'linkhover' : 'link'" routerLinkActive #rla="routerLinkActive">Telugu<span title="Book Count" class="badge">225</span></a>
+				<a [routerLink]="['',{ outlets:{category: ['books','telugu']}}]" class="link" [ngClass]="rla.isActive? 'linkhover' : 'link'" routerLinkActive #rla="routerLinkActive">Telugu<span title="Book Count" class="badge">6</span></a>
 				<div *ngIf="rla.isActive" class="arrow"></div>
 			</div>
 			<div class="col-sm-3">
-				<a [routerLink]="['',{ outlets:{category: ['books','kannada']}}]" class="link" [ngClass]="rla1.isActive? 'linkhover' : 'link'" routerLinkActive #rla1="routerLinkActive">Kannada<span class="badge">25</span></a>
+				<a [routerLink]="['',{ outlets:{category: ['books','kannada']}}]" class="link" [ngClass]="rla1.isActive? 'linkhover' : 'link'" routerLinkActive #rla1="routerLinkActive">Kannada<span class="badge">6</span></a>
 				<div *ngIf="rla1.isActive" class="arrow"></div>
 			</div>
 			<div class="col-sm-3">
